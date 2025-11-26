@@ -1,0 +1,100 @@
+/* 🌈 Background Animation (for all auth pages) */
+.bg-anim {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #ff6a00, #ee0979, #6a11cb, #2575fc);
+  background-size: 600% 600%;
+  animation: animBG 15s ease infinite;
+}
+
+@keyframes animBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🌟 Glassmorphic Card for Signup */
+.glass-card-signup {
+  width: 400px;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+/* 🌟 Heading */
+.glass-card-signup h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* 🌟 Inputs */
+.input-field-signup {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.input-field-signup::placeholder {
+  color: #f0f0f0;
+}
+
+/* 🌟 Buttons */
+.btn-send-otp {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-send-otp:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff416c;
+}
+
+.btn-verify-otp {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(135deg, #1fa2ff, #12d8fa, #a6ffcb);
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-verify-otp:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #12d8fa;
+}
+
+/* 🌟 Messages */
+.msg-signup {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}

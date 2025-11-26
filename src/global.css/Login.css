@@ -1,0 +1,80 @@
+/* 🌈 Animated Gradient Background */
+.bg-anim {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #ff00c8, #6a5bff, #00f0ff, #ffcc00);
+  background-size: 500% 500%;
+  animation: animBG 12s ease infinite;
+}
+
+@keyframes animBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🌟 Glassmorphic Card */
+.glass-card {
+  width: 380px;
+  padding: 35px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* 🌟 Heading */
+.glass-card h2 {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* 🌟 Inputs */
+.input-field {
+  width: 100%;
+  padding: 13px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.input-field::placeholder {
+  color: #f1f1f1;
+}
+
+/* 🌟 Buttons */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff0084, #ff8f00);
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff8f00;
+}
+
+/* 🌟 Messages */
+.msg {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
